@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div>
+    <p>click me</p>
+</div>
+<script>
+    $(function () {
+        $('div').on('click',function (e) {
+            console.log($(e.currentTarget)) //事件的监听者
+            console.log($(e.target)) // 事件的目标
+            console.log($(this))
+        })
+    })
+</script>
+</body>
+</html>

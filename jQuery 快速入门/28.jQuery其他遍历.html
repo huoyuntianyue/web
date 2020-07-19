@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        p{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<p>圣诞节快乐</p>
+
+<h1>hello, <a href="">你好</a>world</h1>
+
+<script>
+    $(function () {
+        // $('div').add('p').css('border', '1px solid black')
+        $('h1').conntents().filter(function () {
+            return this.nodeType != 1
+        }).wrap('<b/>')
+    })
+</script>
+
+</body>
+</html>

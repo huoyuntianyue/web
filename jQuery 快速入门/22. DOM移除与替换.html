@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div>
+    <div class="cls">
+        <p class="name">hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+    </div>
+
+</div>
+
+<script>
+    $(function () {
+        //移除
+        // $('p').detach('.name')
+        // $('.cls').empty()
+        // $('p').remove('.name')
+
+
+        //替换
+        // $('<sapn>你好</sapn>').replaceAll($('p'))
+        // var re = $('<sapn>你好</sapn>').replaceWith($('p'))
+        var re = $('p').replaceWith('<sapn>你好</sapn>')
+        console.log(re)
+    })
+</script>
+
+</body>
+</html>

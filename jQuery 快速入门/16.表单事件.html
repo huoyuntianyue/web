@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<div>
+<!--    <form action="">-->
+<!--        <input id="input1" type="text" value="file 1">-->
+<!--        <input type="text" value="file 2">-->
+<!--    </form>-->
+
+
+    <form action="" id="submit">
+        <input  type="submit" value="go">
+    </form>
+
+
+</div>
+<script>
+    $(function () {
+        // $('#input1').focus( function () {
+        //     alert('获得焦点')
+        // })
+        // $('#input1').blur( function () {
+        //     alert('失去焦点')
+        // })
+        // $('#input1').change( function () {
+        //     alert('发生改变')   //改变后，按一下enter键  只适用  input    select    textarea
+        // })
+        // $('#input1').select( function () {
+        //     alert('选择')  //选择输入框中的内容，只适用  input type='text'        textarea
+        // })
+
+        $('#submit').submit( function () {
+            alert('提交内容了')  //只能绑定到form上面
+        })
+    })
+</script>
+</body>
+</html>

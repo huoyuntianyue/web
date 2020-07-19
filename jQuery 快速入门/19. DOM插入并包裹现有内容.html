@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="div1">
+    <p>hello</p>
+</div>
+<div class="div2">
+    <p>hsdfjklds</p>
+</div>
+<script>
+    $(document).ready(function () {
+        // $('p').wrap('<div></div>')
+        // $('p').unwrap()
+        // $('p').wrapAll('<div></div>')
+        $('p').wrapInner('<div></div>')
+
+    })
+</script>
+
+</body>
+</html>

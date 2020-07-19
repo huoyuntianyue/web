@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 200px;
+            border: 10px solid black;
+            margin: 100px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>这是一个div</div>
+<script>
+    $(function () {
+        $('div').css({'color': 'red', "background-color" : 'yellow'})
+        // console.log($('div').width())
+        // console.log($('div').height())
+        // console.log($('div').innerWidth())
+        // console.log($('div').innerHeight())
+        console.log($('div').width(50))
+        console.log($('div').height(50))
+
+    })
+</script>
+
+</body>
+</html>

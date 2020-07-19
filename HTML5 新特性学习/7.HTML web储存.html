@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var text = document.getElementById('text')
+            var bt = document.getElementById('bt')
+            if(localStorage.text){
+                text.value = localStorage.text
+            }
+            bt.onclick = function(){
+                localStorage.text = text.value
+            }
+
+            var  num=0;
+            var tx = document.getElementById('tx')
+            var cli = document.getElementById('cli')
+            if(sessionStorage.num){
+                num = sessionStorage.num
+            }else {
+                num = 0
+            }
+            cli.onclick = function () {
+                num ++
+                sessionStorage.num = num
+                change()
+            }
+            function change() {
+                tx.innerHTML = num
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div>
+    <textarea name="" id="text" cols="30" rows="30" class="id"></textarea>
+    <button id="bt">save</button>
+</div>
+
+<div>
+    <span id = 'tx'>0</span>
+    <button id = 'cli'>点击</button>
+</div>
+
+
+</body>
+</html>

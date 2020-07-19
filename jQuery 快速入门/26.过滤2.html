@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+<ul>
+    <li>hello</li>
+    <li class="cls">111
+        <strong>hello</strong>
+        <strong>hello</strong>
+    </li>
+    <li><strong>hello</strong></li>
+    <li>hello</li>
+</ul>
+
+<ul class="ul2">
+    <li>list 1<strong>item1</strong></li>
+    <li> <strong>list 2</strong></li>
+    <li>list 3</li>
+</ul>
+
+<script>
+    $(function () {
+        // $('li').first().css('background-color', 'red')
+        // $('li').last().css('background-color', 'red')
+
+        $('li').has('strong').css('background-color', 'red')
+        $('.ul2').click(function (event) {
+            var target = $(event.target)
+            if(target.is('li')){
+                target.css('background-color', 'red')
+            }
+        })
+
+    })
+</script>
+
+</body>
+</html>

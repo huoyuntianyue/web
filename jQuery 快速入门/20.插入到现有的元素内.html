@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<span>测试</span>
+<p>hehe</p>
+<p>hehe</p>
+<script>
+    $(function () {
+        // $('p').append('<div>你好</div>')
+        // $('p').append($('span'))
+        // $('<div>你好</div>').appendTo($('p'))
+
+        // $('p').prepend('<div>你好</div>')
+        // $('p').prepend($('span'))
+        $('<div>你好</div>').prependTo($('p'))
+    })
+</script>
+</body>
+</html>

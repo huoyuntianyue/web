@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        .red{
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <a>click me</a>
+    <p id = 'ps'>click me</p>
+    <div id = 'div1' class="red  aa">click me</div>
+</div>
+<script>
+    $(function () {
+        $('a').addClass('red').attr('href','http://www.baidu.com')
+        console.log($('p').attr('id'))
+        console.log($('div').hasClass('red'))
+        console.log($('.red').html())
+        $('.aa').html('这个是html（）修改的')
+
+    })
+</script>
+</body>
+</html>

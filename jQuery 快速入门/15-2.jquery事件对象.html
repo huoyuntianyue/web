@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div>
+    <p>click me</p>
+</div>
+<script>
+    $(function () {
+        $('div').on('click','p',function (e) {
+            console.log($(e.delegateTarget))
+            console.log($(this).html())
+        })
+    })
+</script>
+</body>
+</html>

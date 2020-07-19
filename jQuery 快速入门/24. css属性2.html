@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        /*div{*/
+        /*    width: 100px;*/
+        /*    height: 200px;*/
+        /*    border: 10px solid black;*/
+        /*    margin: 100px;*/
+        /*    padding: 50px;*/
+        /*}*/
+        .div1{
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            /*position: relative;*/
+            background-color: gray;
+        }
+        .div2{
+            width: 1000px;
+            height: 2000px;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--<div>这是一个div</div>-->
+<div class="div1">
+    <div class="div2">div2</div>
+</div>
+
+
+<script>
+    $(function () {
+        // var aff = {
+        //     left:200,
+        //     top:300
+        // }
+        // $('div').offset(aff)
+        // console.log($('div').outerHeight(true))
+        // console.log($('div').outerWidth(true))
+        $('.div1').scrollTop(300)
+        console.log($('.div1').scrollTop())
+        $('.div1').scrollLeft(300)
+
+
+    })
+</script>
+
+</body>
+</html>

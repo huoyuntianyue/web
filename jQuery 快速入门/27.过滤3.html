@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+<ul>
+    <li id="test">hello</li>
+    <li class="cls">111
+        <strong>hello</strong>
+        <strong>hello</strong>
+    </li>
+    <li><strong>hello</strong></li>
+    <li>hello</li>
+</ul>
+
+
+
+<script>
+    $(function () {
+        // $('li').not('.cls').css('background-color', 'red')
+        // $('li').slice(1,2).css('background-color', 'red')
+        $('li').map(function () {
+            console.log(this.id)
+        })
+
+
+    })
+</script>
+
+</body>
+</html>

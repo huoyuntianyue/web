@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73c78ce0-ef9c-48f6-9251-0c6d2b611fd7" name="Default Changelist" comment="test3">
+    <list default="true" id="73c78ce0-ef9c-48f6-9251-0c6d2b611fd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Vue/26.切换组件方式一.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/27.切换组件方式二.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/28.组件切换动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/29.动画-小球标识符的分析.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/30.组件复习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/31.父组件向子组件传值.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/32.子组件调用父组件的方法，并像父组件传值.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/25.组件中的data问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/25.组件中的data问题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/18.钩子函数动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/18.钩子函数动画.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vue/25.组件中的data问题.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/31.父组件向子组件传值.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="272">
+              <caret line="26" column="24" lean-forward="true" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vue/32.子组件调用父组件的方法，并像父组件传值.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -36,6 +52,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>name</find>
+    </findStrings>
+    <dirStrings>
+      <dir>E:\WebStorm 2019.1\projects\web</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,13 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jQuery 快速入门/15-1.jquery 事件对象.html" />
-        <option value="$PROJECT_DIR$/jQuery 快速入门/15-2.jquery事件对象.html" />
-        <option value="$PROJECT_DIR$/jQuery 快速入门/15-3.jquery 事件对象.html" />
-        <option value="$PROJECT_DIR$/jQuery 快速入门/15-4.jquery事件对象.html" />
-        <option value="$PROJECT_DIR$/jQuery 快速入门/16.表单事件.html" />
-        <option value="$PROJECT_DIR$/jQuery 快速入门/17.jQuery属性上.html" />
-        <option value="$PROJECT_DIR$/jQuery 快速入门/18.jQuery dom属性2.html" />
         <option value="$PROJECT_DIR$/jQuery 快速入门/19. DOM插入并包裹现有内容.html" />
         <option value="$PROJECT_DIR$/jQuery 快速入门/20.插入到现有的元素内.html" />
         <option value="$PROJECT_DIR$/jQuery 快速入门/21. DOM插入到元素外.html" />
@@ -86,7 +103,6 @@
         <option value="$PROJECT_DIR$/Vue/16.这个是有动画的.html" />
         <option value="$PROJECT_DIR$/Vue/lib/animated.css" />
         <option value="$PROJECT_DIR$/Vue/17.第三方动画库.html" />
-        <option value="$PROJECT_DIR$/Vue/18.钩子函数动画.html" />
         <option value="$PROJECT_DIR$/Vue/19.列表动画.html" />
         <option value="$PROJECT_DIR$/Vue/20.创建组件一.html" />
         <option value="$PROJECT_DIR$/Vue/21.创建组件二.html" />
@@ -94,6 +110,14 @@
         <option value="$PROJECT_DIR$/Vue/23.自定义私有组件.html" />
         <option value="$PROJECT_DIR$/Vue/24.组件中的data.html" />
         <option value="$PROJECT_DIR$/Vue/25.组件中的data问题.html" />
+        <option value="$PROJECT_DIR$/Vue/26.登录切换.html" />
+        <option value="$PROJECT_DIR$/Vue/27.切换组件方式二.html" />
+        <option value="$PROJECT_DIR$/Vue/28.组件切换动画.html" />
+        <option value="$PROJECT_DIR$/Vue/18.钩子函数动画.html" />
+        <option value="$PROJECT_DIR$/Vue/29.动画-小球标识符的分析.html" />
+        <option value="$PROJECT_DIR$/Vue/30.组件复习.html" />
+        <option value="$PROJECT_DIR$/Vue/31.父组件向子组件传值.html" />
+        <option value="$PROJECT_DIR$/Vue/32.子组件调用父组件的方法，并像父组件传值.html" />
       </list>
     </option>
   </component>
@@ -135,12 +159,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Vue/29.动画-小球标识符的分析.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Vue/29.动画-小球标识符的分析.html" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -227,7 +252,7 @@
       <workItem from="1595135124914" duration="1209000" />
       <workItem from="1595142792264" duration="11770000" />
       <workItem from="1595166172980" duration="2834000" />
-      <workItem from="1595206901996" duration="1542000" />
+      <workItem from="1595206901996" duration="9209000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1595123422223</created>
@@ -271,14 +296,22 @@
       <option name="project" value="LOCAL" />
       <updated>1595207762082</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test3">
+      <created>1595208465336</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595208465336</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75732000" />
+    <option name="totallyTimeSpent" value="83399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15542677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -310,55 +343,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="test3" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/15-3.jquery 事件对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="15" column="5" lean-forward="true" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/17.jQuery属性上.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/18.jQuery dom属性2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/19. DOM插入并包裹现有内容.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/20.插入到现有的元素内.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/21. DOM插入到元素外.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery 快速入门/22. DOM移除与替换.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery 快速入门/23. css属性.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -575,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/18.钩子函数动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vue/16.这个是有动画的.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -633,8 +610,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/25.组件中的data问题.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="18" lean-forward="true" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/26.切换组件方式一.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <caret line="12" column="23" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/27.切换组件方式二.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="11" column="23" lean-forward="true" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/28.组件切换动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="30" lean-forward="true" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/18.钩子函数动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/29.动画-小球标识符的分析.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="33" column="18" lean-forward="true" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/30.组件复习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="15" lean-forward="true" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/31.父组件向子组件传值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="24" lean-forward="true" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/32.子组件调用父组件的方法，并像父组件传值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
         </state>
       </provider>
     </entry>

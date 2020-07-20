@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="./lib/Vue.js"></script>
-    <link rel="stylesheet" href="./lib/animated.css">
+    <title>Title</title>
+    <script src="lib/Vue.js"></script>
     <style>
-        .div1{
+        .ball {
             width: 15px;
             height: 15px;
             background-color: red;
             border-radius: 50%;
+
         }
     </style>
 </head>
-
 <body>
 <div id="app">
     <input type="button" value="快到碗里来" @click="flag=!flag">
-
     <transition @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
-        <div v-if="flag" class="div1"></div>
+        <div class="ball" v-if="flag" ></div>
+
     </transition>
 </div>
 
 <script>
-    var vm = new Vue({
-        el: '#app',
+
+
+    new Vue({
+        el: "#app",
         data: {
             flag: false
         },
         methods: {
-            beforeEnter(el){
-                el.style.transform = "translate(0,0)"
+            beforeEnter(el) {
+                el.style.transform = 'translate(0, 0)'
             },
-            enter(el,done){
+            enter(el, done) {
                 el.offsetWidth
-                el.style.transform = "translate(100px,400px)"
+                el.style.transform = 'translate(150px, 450px)'
                 el.style.transition = 'all 1s ease'
                 done()
             },
-            afterEnter(el){
+            afterEnter(el) {
+                // 直接跳过后半场动画
                 this.flag = !this.flag
-            }
-        }
-    });
+            },
+        },
+        components: {}
+    })
 </script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <style>
+        .red{
+            color: red;
+
+        }
+        .thin{
+            font-weight: 200;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+<!--    第一种-->
+<!--    <h1 class="red thin">这是一个大大的样式</h1>-->
+<!--&lt;!&ndash;    第二种&ndash;&gt;-->
+<!--    <h1 :class="['red', 'thin']">这是一个大大的样式</h1>-->
+<!--&lt;!&ndash;    第三种&ndash;&gt;-->
+<!--    <h1 :class="['red', flag?'italic':'']">这是一个大大的样式</h1>-->
+<!--&lt;!&ndash;    第四种&ndash;&gt;-->
+<!--    <h1 :class="['red', {thin:true}]">这是一个大大的样式</h1>-->
+
+<!--    <h1 :class="{red:true, thin:true}">这是一个大大的样式</h1>-->
+<!--    <h1 :class="classObj">这是一个大大的样式</h1>-->
+
+<!--内嵌样式-->
+    <h1 :style="[classObj1, classObj2]">这是一个大大的样式123</h1>
+
+
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            flag: true,
+            classObj:{red:true, thin:true},
+            classObj1:{color:"red"},
+            classObj2:{'font-weight':200}
+        },
+        methods: {
+
+        }
+    })
+</script>
+</body>
+</html>

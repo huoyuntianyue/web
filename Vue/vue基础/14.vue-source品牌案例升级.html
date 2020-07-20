@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <script src="../node_modules/vue-resource/dist/vue-resource.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.css">
+</head>
+<body>
+<div id="app">
+
+    <table class="table table-hover table-bordered">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">输入标题</h3>
+            </div>
+            <div class="panel-body form-inline">
+                <label>
+                    name
+                    <input type="text" v-model="name" class="form-control">
+                </label>
+                <label>
+                    <input type="button" class="form-control" value="添加">
+                </label>
+            </div>
+        </div>
+        <thead>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>CTime</td>
+            <td>Operation</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="item in list" :key="item.id">
+            <td>{{ item.id }}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.cTime}}</td>
+            <td><a href="#">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            name: '',
+            list: [
+                {id:1, name: '五菱宏光', cTime: new Date()},
+                {id:2, name: '大众', cTime: new Date()}
+            ]
+        },
+        created() {
+            this.getDate()
+        },
+        methods: {
+            add() {
+
+            },
+            getDate() {
+                this.$http.get("http:127.0.0.1:3000/getData").then(result => {
+                    var result = result.body
+                    if (result.status === 0) {
+                        this.list = result.message
+                    } else {
+                        alert('返回数据有误')
+                    }
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

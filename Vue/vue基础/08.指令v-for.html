@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <style>
+        .red {
+            color: red;
+
+        }
+
+        .thin {
+            font-weight: 200;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--第一种--普通列表-->
+    <!--    <p v-for="(key, index) in list1">索引为：{{index}}&#45;&#45;&#45;&#45;值为：{{key}}</p>-->
+
+    <!--第二种--对象列表-->
+<!--    <p v-for="(key,index) in list2">索引为：{{key.name}}&#45;&#45;&#45;&#45;值为：{{key.gender}}</p>-->
+    <!--第三种--对象-->
+    <p v-for="(key,value,index) in obj">索引为：{{index}}----属性为：{{key}}----------值为：{{value}}</p>
+
+    <!--第四种--数值-->
+    <p v-for="count in 10">{{count}}</p>
+
+
+
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            list1: [5, 1, 2, 3],
+            list2: [
+                {name: "小明", gender: "男"},
+                {name: "小明2", gender: "男2"}
+            ],
+            obj: {
+                name: "小明", gender: "男"
+            }
+
+        },
+        methods: {}
+    })
+</script>
+</body>
+</html>

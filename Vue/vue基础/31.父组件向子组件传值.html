@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <templ :parent-msg="msg"></templ>
+</div>
+
+<script>
+
+
+    new Vue({
+        el: "#app",
+        data: {
+            msg: "父组件传递的值"
+        },
+        methods: {},
+        components: {
+            templ: {
+                data (){
+                    return {
+                        childMsg: "这是子组件的信息Msg"
+                    }
+                },
+                props: ['parentMsg'],
+                template: "<div><h1>这是一个子组件--{{childMsg}}----{{parentMsg}}</h1><input type='text' v-model='childMsg'> <input type='text' v-model='parentMsg'></div>"
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <temp @parent-meth="show"></temp>
+</div>
+
+<script>
+
+
+    new Vue({
+        el: "#app",
+        data: {
+            msg: "父组件传递的值",
+            parentM: null
+        },
+        methods: {
+            show(data){
+                console.log('这个是父组件的方法:---' + data)
+                this.parentM = data
+                console.log(this.parentM)
+            }
+        },
+        components: {
+            temp: {
+                data(){
+                    return {
+                        childMsg: {name: '小明', age: 18}
+                    }
+                },
+                template:"<input type='button' @click='childCli' value='这个是子组件的内容'>",
+                methods:{
+                    childCli(){
+                        this.$emit('parent-meth', this.childMsg)
+                    }
+                }
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

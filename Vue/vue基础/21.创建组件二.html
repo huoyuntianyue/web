@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <my-com1></my-com1>
+</div>
+<script>
+    Vue.component('myCom1', {
+        template:"<div><h1>这是我的组件练习二</h1><span>练习</span></div>"
+    })
+    new Vue({
+        el: "#app",
+        data: {
+
+        },
+        methods: {
+
+        }
+    })
+</script>
+</body>
+</html>

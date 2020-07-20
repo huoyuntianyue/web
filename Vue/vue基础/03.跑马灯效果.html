@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <input type="button" value="浪起来" @click="lang">
+    <input type="button" value="别浪" @click="stop">
+    <h4>{{ msg }}</h4>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            msg: "猥琐，别浪~~！！！",
+            setIntervalID: null
+        },
+        methods: {
+            //es6的语法
+            lang() {
+                var _this = this
+                //旧的写法
+                // setInterval(function () {
+                //     console.log(_this.msg)
+                //     var start = _this.msg.substring(0,1)
+                //     var end = _this.msg.substring(1)
+                //     _this.msg = end + start
+                // }, 400)
+                //箭头函数写法，解决外面和里面的this不同问题
+                if(this.setIntervalID != null) return;
+                this.setIntervalID = setInterval( () => {
+                    console.log(_this.msg)
+                    var start = _this.msg.substring(0,1)
+                    var end = _this.msg.substring(1)
+                    _this.msg = end + start
+                }, 400)
+
+            },
+            stop(){
+                clearInterval(this.setIntervalID)
+                this.setIntervalID = null
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

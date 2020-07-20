@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <style>
+        .div {
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <!--    <div @click="div1Handler" class="div">-->
+    <!--        <input type="button" @click.stop="btnHandler" value="戳我">-->
+    <!--    </div>-->
+
+
+<!--    <a href="https://www.baidu.com" @click.prevent="linkHandler">有问题，找百度</a>-->
+
+
+<!--    <div @click.capture="div1Handler" class="div">-->
+<!--        <input type="button" @click.stop="btnHandler" value="戳我">-->
+<!--    </div>-->
+
+
+
+<!--    <div @click.self="div1Handler" class="div">-->
+<!--        <input type="button" @click.stop="btnHandler" value="戳我">-->
+<!--    </div>-->
+
+        <a href="https://www.baidu.com" @click.prevent.once="linkHandler">有问题，找百度</a>
+
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            div1Handler() {
+                console.log("这个是div的事件")
+            },
+            btnHandler() {
+                console.log("这个是btn的事件")
+            },
+            linkHandler() {
+                console.log("这是一个超链接")
+            }
+        }
+    })
+</script>
+</body>
+</html>

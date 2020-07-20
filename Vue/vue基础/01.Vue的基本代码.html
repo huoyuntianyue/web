@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p>{{ msg }}</p>
+</div>
+<script src="../lib/Vue.js"></script>
+
+<script>
+    var vm = new Vue({
+        el : "#app",
+        data : {
+            msg: "这是一个Vue文件"
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <script src="../node_modules/vue-resource/dist/vue-resource.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <input type="button" value="get请求" @click="getRequest">
+    <input type="button" value="post请求" @click="postRequest">
+    <input type="button" value="jsonp请求" @click="jsonpRequest">
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            msg: "hello"
+        },
+        methods: {
+            getRequest(){
+                this.$http.get("https://www.baidu.com").then(function (response) {
+                    console.log(response)
+                })
+            },
+            postRequest(){
+                this.$http.post('http://vue.studyit.io/api/post', {}, {emulateJSON: true}).then(result => {
+                    console.log(result)
+                })
+            },
+            jsonpRequest(){
+                this.$http.post('http://vue.studyit.io/api/jsonp',).then(result => {
+                    console.log(result)
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

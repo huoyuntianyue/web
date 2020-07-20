@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <script src="../node_modules/vue-router/dist/vue-router.js"></script>
+<!--    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>-->
+    <style>
+        .router-link-active, .myClass{
+            color: red;
+            background-color: green;
+            font-size: 80px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .v-enter, .v-leave-to{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        .v-enter-active, .v-leave-active{
+            transition: all 1s ease;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+<!--    <a href="#/login">登录</a>-->
+<!--    <a href="#/register">注册</a>-->
+    <router-link to="/login" tag="span">登录</router-link>
+    <router-link to="/register">注册</router-link>
+    <transition mode="out-in">
+        <router-view></router-view>
+
+    </transition>
+</div>
+<script>
+    const login = {
+        template: "<h1>这个是登录</h1>"
+    }
+    const register = {
+        template: "<h1>这个是注册</h1>"
+    }
+    const routerObj = new VueRouter({
+        routes: [
+            {path: '/', redirect: '/login'},
+            // {path: '/', component: login},
+            {path: '/login', component: login},
+            {path: '/register', component: register},
+        ],
+        linkActiveClass: 'myClass'
+    })
+    new Vue({
+        el: "#app",
+        router: routerObj
+    })
+</script>
+</body>
+</html>

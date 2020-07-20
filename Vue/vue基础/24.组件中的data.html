@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <my-com1></my-com1>
+</div>
+<script>
+
+    Vue.component('myCom1', {
+        template:"<h1>这是全局组件--- {{ msg }}</h1>",
+        data: function () {
+            return {
+                msg: "这是组件中的data数据"
+            }
+        }
+    })
+    new Vue({
+        el: "#app",
+        data: {
+
+        },
+        methods: {
+
+        }
+    })
+</script>
+</body>
+</html>

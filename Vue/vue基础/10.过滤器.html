@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{ msg | filOne('疯狂') | filTwo }}
+</div>
+<script>
+    Vue.filter('filOne', function (msg, arg) {
+        return msg.replace(/单纯/g, arg)
+    })
+    Vue.filter('filTwo', function (msg) {
+        return msg + "=========="
+    })
+    new Vue({
+        el: "#app",
+        data:{
+            msg: "曾今也是一个单纯的人，单纯的我，念着单纯的她"
+        }
+    })
+</script>
+
+</body>
+</html>

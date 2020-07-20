@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <comp ref="mycomp"></comp>
+    <input type="button" value="获取子组件的方法和数据" @click="getM">
+</div>
+
+
+
+<script>
+    var comp = {
+        template: "<h1>这个是子组件</h1>",
+        data() {
+            return {
+                user: '小明'
+            }
+        },
+        methods: {
+            show(){
+                console.log('这是子组件的show方法')
+            }
+        }
+    }
+
+    var vm = new Vue({
+        el: "#app",
+        data: {
+
+        },
+        methods: {
+            getM(){
+                console.log(this.$refs.mycomp.user)
+                this.$refs.mycomp.show()
+            }
+        },
+        created(){
+        },
+        components: {
+            comp,
+        }
+
+    })
+</script>
+</body>
+</html>

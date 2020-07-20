@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <comp @func = "loadContents"></comp>
+    <ul class="list-group">
+        <li class="list-group-item" v-for="item in list" :key="item.id">
+            <span class="badge">评论人：{{item.user}}</span>
+            {{item.contents}}
+        </li>
+    </ul>
+</div>
+
+<template id="temp">
+    <div>
+        <div class="form-group">
+            <label>评论人： </label>
+
+            <input type="text" class="form-control" v-model="user">
+        </div>
+        <div class="form-group">
+            <label>评论内容： </label>
+            <textarea class="form-control" v-model="content"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="button" value="发表评论" @click="postContent" class="btn btn-primary">
+        </div>
+    </div>
+</template>
+
+<script>
+    var comp = {
+        template: "#temp",
+        data() {
+            return {
+                user: '',
+                content: ''
+            }
+        },
+        methods: {
+            postContent() {
+                var localStorageData = JSON.parse(localStorage.getItem('items') || '[]')
+                localStorageData.unshift({id: new Date(), user: this.user, contents: this.content})
+                this.user = this.content = ''
+                localStorage.setItem('items', JSON.stringify(localStorageData))
+                this.$emit('func')
+            }
+        }
+    }
+
+    new Vue({
+        el: "#app",
+        data: {
+            list: [
+                {id: new Date(), user: '李白', contents: "天生我材必有用"},
+                {id: new Date(), user: '杜甫', contents: "大庇天下寒士俱欢颜"},
+                {id: new Date(), user: '白居易', contents: "离离原上草"}
+            ]
+        },
+        methods: {
+            loadContents(){
+                var list = JSON.parse(localStorage.getItem('items') || '[]')
+                this.list = list
+            }
+        },
+        created(){
+            this.loadContents()
+        },
+        components: {
+            comp,
+        }
+
+    })
+</script>
+</body>
+</html>

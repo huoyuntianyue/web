@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/Vue.js"></script>
+    <style>
+        li{
+            margin: 5px;
+            font-size: 20px;
+            line-height: 35px;
+            border: 1px dashed green;
+            padding-left: 5px;
+            width: 100%;
+        }
+        li:hover{
+            background-color: red;
+            transition: all 1s ease;
+
+
+        }
+        .v-enter, .v-leave-to{
+            opacity: 0;
+            transform: translateY(80px);
+        }
+        .v-enter-active, .v-leave-active{
+            transition: all 2s ease;
+        }
+
+        .v-move{
+            transition: all 2s ease;
+        }
+        .v-leave-active{
+            position:absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div>
+        <label>
+            id
+            <input type="text" v-model="id">
+        </label>
+        <label>
+            name
+            <input type="text" v-model="name">
+        </label>
+        <input type="button" value="添加" @click="add">
+
+    </div>
+    <ul>
+        <transition-group appear tag="ul">
+            <li v-for="(item,i) in list" :key="item.id" @click="del(i)">{{item.id}}---{{item.name}}</li>
+        </transition-group>
+    </ul>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            id: "",
+            name: "",
+            list: [
+                {id: 1, name: "小红"},
+                {id: 2, name: "小白"},
+                {id: 3, name: "小灰"},
+                {id: 4, name: "小蓝"},
+                {id: 5, name: "小水"},
+                {id: 6, name: "小灰"},
+                {id: 7, name: "小灰"},
+                {id: 8, name: "小灰"}
+            ]
+        },
+        methods: {
+            add() {
+                this.list.push({id: this.id, name: this.name})
+            },
+            del(id){
+                this.list.splice(id, 1)
+            }
+        }
+    })
+</script>
+</body>
+</html>

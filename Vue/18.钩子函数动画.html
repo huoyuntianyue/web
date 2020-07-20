@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/Vue.js"></script>
+    <link rel="stylesheet" href="./lib/animated.css">
+    <style>
+        .div1{
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <input type="button" value="快到碗里来" @click="flag=!flag">
+
+    <!-- 可用v-bind（:）式绑定，分别确定进出的时长，也即距离 -->
+    <transition @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
+        <!-- 引用animated类(必须写，使bounceIn、bounceOut效果显现) -->
+        <div v-if="flag" class="div1"></div>
+    </transition>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            flag: false
+        },
+        methods: {
+            beforeEnter(el){
+                el.style.transform = "translate(0,0)"
+            },
+            enter(el,done){
+                el.offsetWidth
+                el.style.transform = "translate(100px,400px)"
+                el.style.transition = 'all 1s ease'
+                done()
+            },
+            afterEnter(el){
+                this.flag = !this.flag
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73c78ce0-ef9c-48f6-9251-0c6d2b611fd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Vue/25.组件中的data问题.html" afterDir="false" />
+    <list default="true" id="73c78ce0-ef9c-48f6-9251-0c6d2b611fd7" name="Default Changelist" comment="test3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/25.组件中的data问题.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/25.组件中的data问题.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vue/25.组件中的data问题.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="360">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -227,7 +227,7 @@
       <workItem from="1595135124914" duration="1209000" />
       <workItem from="1595142792264" duration="11770000" />
       <workItem from="1595166172980" duration="2834000" />
-      <workItem from="1595206901996" duration="692000" />
+      <workItem from="1595206901996" duration="1542000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1595123422223</created>
@@ -264,15 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595206970625</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test3">
+      <created>1595207762082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595207762082</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74882000" />
+    <option name="totallyTimeSpent" value="75732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15542677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -627,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/25.组件中的data问题.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="360">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
